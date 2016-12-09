@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>VehicleSearch.com</h1>
+    <p class="lead">We are a free provider of vehicle information. Our database includes details and information about many of the vehicles you want to own.</p>
+    <p><a href="http://localhost:17329/Home/About" class="btn btn-primary btn-lg">About Us &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            To begin your search for great vehicle information, click the button below.
+        </p>
+        @*<p><a href="~/Views/Vehicles/Index.cshtml">Let's Start &raquo;</a></p>*@
+        <p><a class="btn btn-default" @Html.ActionLink("Let's Begin","Index", "Vehicles") </a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Reach Out</h2>
+        <p>If you want more information on the vehicle once you find it in our database, feel free to give us a call and a friendly and knowledgeable Team Member will assist you.</p>
+        <p><a class="btn btn-default" href="tel:706-555-3225">Call Us</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Contribute</h2>
+        <p>If you find that the vehicle you would like to know more about isn't in our database, send us an email and we will collect a review and email you directly!</p>
+        <p><a class="btn btn-default" href="mailto:Support@vehiclesearch.com">Email Us</a></p>
+    </div>
+</div>
